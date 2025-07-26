@@ -16,11 +16,11 @@
         <div class="user">
             <h2><%= user.username %></h2>
             <p><%= user.posts %></p>
-            <a href="http://localhost:5000/posts/<%= user.id %>"><button>See Detail</button></a>
+            <a href="/posts/<%= user.id %>"><button>See Detail</button></a>
         </div>
         <% } %>
         <br><br>
-        <a href="http://localhost:5000/posts/new">create a new post</a>
+        <a href="/posts/new">create a new post</a>
     </div>
 
 
