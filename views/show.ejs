@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>see post in detail</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Here is <%= post.username %> post in detail</h1>
+        <h2>id: <%= post.id %></h2>
+        <h2>username: <%= post.username %></h2>
+        <p>posts posted by <%= post.username %> is:     <b><%= post.posts %> </b></p>
+
+        <a href="http://localhost:5000/posts"><button>Go back</button></a>
+    </div>
+</body>
+</html>
