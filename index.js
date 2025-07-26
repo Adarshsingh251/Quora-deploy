@@ -29,6 +29,9 @@ let users = [
 app.get("/posts",(req,res)=>{
     res.render("index.ejs",{users})
 })
+app.get("/",(req,res)=>{
+    res.redirect("/posts");
+})
 app.get("/posts/new",(req,res)=>{
     res.render("new_posts.ejs")
 })
