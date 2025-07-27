@@ -17,6 +17,12 @@
             <h2><%= user.username %></h2>
             <p><%= user.posts %></p>
             <a href="/posts/<%= user.id %>"><button>See Detail</button></a>
+            <a href="/post/<%= user.id %>/editPost"><button>Edit</button></a>
+            
+            <form action="/<%= user.id %>/deletededo?_method=DELETE" method="post">
+                <button>Delete</button>
+            </form>
+
         </div>
         <% } %>
         <br><br>

@@ -18,12 +18,19 @@ html,body{
 .main .user{
     background-color: yellowgreen;
     margin-top: 10px;
+    padding: 3px 9px
 }
 .main a{
     color: white;
     text-decoration: none;
 }
-a button{
+a button,form button{
     padding: 8px 13px;
     margin-top: 19px;
+    margin-bottom: 2px;
+    display: inline;
+}
+.main .user form{
+    display: inline;
+
 }

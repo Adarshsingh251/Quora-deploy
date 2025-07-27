@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post page</title>
+</head>
+<body>
+    <h1><%= particular.username %>Edit your post here</h1>
+    <form action="/<%= particular.id %>/editdedo?_method=PATCH" method="post">
+        <h2>Username is <%= particular.username %></h2>
+        <br><br>
+        <textarea name="posted" id="" rows="9" cols="55" autofocus><%= particular.posts %></textarea>
+        <br><br>
+        <button>Edit It</button>
+    </form>
+</body>
+</html>
